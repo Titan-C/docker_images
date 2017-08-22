@@ -1,6 +1,4 @@
-## -*- docker-image-name: "scipy" -*-
-
-FROM ubuntu:16.04
+FROM ubuntu:latest
 
 MAINTAINER Oscar Najera
 
@@ -18,12 +16,12 @@ RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
 
 RUN useradd -ms /bin/bash tester
 USER tester
-WORKDIR /home/newuser
+WORKDIR /home/tester
 
 ENV PATH /opt/conda/bin:$PATH
 
 RUN export python_stack='numpy scipy matplotlib cython pip joblib' \
     && conda create --yes -n testpy2 python=2.7 $python_stack \
-    && conda create --yes -n testpy3 python=3.5 $python_stack \
-    && conda create --yes -n testpy3ob python=3.5 nomkl $python_stack \
+    && conda create --yes -n testpy3 python=3.6 $python_stack \
+    && conda create --yes -n testpy3ob python=3.6 nomkl $python_stack \
     && conda clean --yes --all
