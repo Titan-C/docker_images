@@ -10,10 +10,19 @@ Conda virtual envs with Python 2.7 & 3.6 with/out MKL
 ```bash
 docker pull najeraoscar/scipy
 ```
+## latex-emacs-min
+
+This is a lighter version of the Texlive distribution containing the
+minimal for my usecase Texlive modules and Emacs. It uses about 1GB of disk
+space. It can be used like the [Latex container](#latex)
+
+```bash
+docker pull najeraoscar/latex-emacs-min
+```
 
 ## Latex
 
-Texlive distribution
+Texlive full distribution. This uses about 4GB of disk space
 
 ```bash
 docker pull najeraoscar/latex
