@@ -23,3 +23,6 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
 
 WORKDIR /data
 VOLUME ["data"]
+
+COPY install-org.el /tmp/
+RUN emacs --batch --load /tmp/install-org.el
