@@ -17,6 +17,8 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
                 texlive-publishers \
                 texlive-science \
                 cm-super \
+                git \
+                wget \
     && apt-get clean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
