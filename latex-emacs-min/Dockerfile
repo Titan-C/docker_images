@@ -7,7 +7,6 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
 		biber \
 		latexmk \
 		make \
-                emacs \
                 texlive-bibtex-extra \
                 texlive-fonts-recommended \
                 texlive-fonts-extra \
@@ -18,8 +17,10 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
                 texlive-publishers \
                 texlive-science \
                 cm-super \
+                emacs \
                 git \
                 wget \
+                unzip \
     && apt-get clean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
