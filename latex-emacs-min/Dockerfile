@@ -10,6 +10,7 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
                 emacs \
                 texlive-bibtex-extra \
                 texlive-fonts-recommended \
+                texlive-fonts-extra \
                 texlive-generic-recommended \
                 texlive-latex-base \
                 texlive-latex-extra \
