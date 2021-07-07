@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:18.04
 
 MAINTAINER oscar
 
@@ -26,7 +26,7 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 WORKDIR /data
-VOLUME ["data"]
+VOLUME ["/data"]
 
 COPY install-org.el /tmp/
 RUN emacs --batch --load /tmp/install-org.el
