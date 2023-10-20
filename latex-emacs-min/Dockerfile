@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
 MAINTAINER oscar
 
@@ -10,10 +10,11 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
                 texlive-bibtex-extra \
                 texlive-fonts-recommended \
                 texlive-fonts-extra \
-                texlive-generic-recommended \
                 texlive-latex-base \
                 texlive-latex-extra \
                 texlive-latex-recommended \
+                texlive-xetex \
+                texlive-luatex \
                 texlive-publishers \
                 texlive-science \
                 cm-super \
