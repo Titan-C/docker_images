@@ -14,5 +14,5 @@
         use-package-always-ensure t))
 
 (use-package org
-  :ensure org-plus-contrib
+  :ensure org-contrib
   :pin org)
