@@ -4,9 +4,9 @@ MAINTAINER oscar
 
 RUN apt-get update && apt-get --no-install-recommends install -y \
                 ca-certificates \
-		biber \
-		latexmk \
-		make \
+		        biber \
+		        latexmk \
+		        make \
                 texlive-bibtex-extra \
                 texlive-fonts-recommended \
                 texlive-fonts-extra \
