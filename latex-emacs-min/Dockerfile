@@ -13,6 +13,7 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
                 texlive-latex-base \
                 texlive-latex-extra \
                 texlive-latex-recommended \
+                texlive-plain-generic \
                 texlive-xetex \
                 texlive-luatex \
                 texlive-publishers \
